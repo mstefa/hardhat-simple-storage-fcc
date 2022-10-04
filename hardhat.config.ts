@@ -1,8 +1,10 @@
-require("@nomicfoundation/hardhat-toolbox");
-require("dotenv").config()
-require("@nomiclabs/hardhat-etherscan");
-require("./task/block-number")
-require("solidity-coverage")
+import "@nomicfoundation/hardhat-toolbox";
+import "dotenv/config"
+import "@nomiclabs/hardhat-etherscan";
+import "./task/block-number"
+import "solidity-coverage"
+import "@typechain/hardhat"
+
 
 
 const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL || "http://localhost:8545"
